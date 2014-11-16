@@ -30,5 +30,5 @@ mongoose.connect('mongodb://raul:romani@ds051630.mongolab.com:51630/mongodb');
 
 // Start the server
 
-http.createServer(app).listen(8080);
+http.createServer(app).listen(process.env.PORT ||8080);
 console.log("Server runnig at http://localhost:8080")
